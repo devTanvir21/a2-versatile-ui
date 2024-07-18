@@ -99,6 +99,10 @@ main>section {
     border-radius: 2.8rem;
 }
 
+.menu-icon {
+    display: none;
+}
+
 
 /* banner styles */
 .banner-content {
@@ -166,6 +170,18 @@ main>section {
 /* responsive styles media query */
 /* for small device */
 @media screen and (max-width: 576px) {
+
+    *{
+        padding: 0 1.25rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 
     .banner {
         flex-direction: column;
