@@ -22,13 +22,7 @@
     color: #424242;
 }
 
-.text-light-dark {
-    color: #B9B9B9;
-}
 
-.bg-dark {
-    background-color: #343434;
-}
 
 .btn-primary {
     background-color: #E6533C;
@@ -135,7 +129,7 @@ main>section {
 }
 
 
-/* change habit section */
+/* change habit section styles */
 .change-habit {
     text-align: center;
 }
@@ -161,6 +155,94 @@ main>section {
 }
 
 
+/* run extra section styles */
+.run-extra {
+    gap: 10rem;
+    padding: 1.8rem;
+    background-color: #222222;
+    border-radius: 1.15rem;
+}
+
+.run-extra-content {
+    text-align: left;
+}
+
+.run-extra-content p {
+    margin-bottom: 2.1rem;
+}
+
+.run-extra img {
+    border-radius: 1.8rem;
+}
+
+
+/* team section styles */
+.team {
+    text-align: center;
+}
+
+.team-card-container {
+    border-radius: 1.1rem;
+    margin-bottom: 3.6rem;
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    background-color: #222222;
+}
+
+.team-card {
+    text-align: left;
+    max-width: 21rem;
+    padding: 13rem 1rem 1rem;
+    border-radius: 1.1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.team-name {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.team-title {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 0.25rem;
+}
+
+.team-card-1 {
+    background-image: url('../images/trainer1.png');
+}
+
+.team-card-2 {
+    background-image: url('../images/trainer2.png');
+}
+
+.team-card-3 {
+    background-image: url('../images/trainer3.png');
+}
+
+.team-card-4 {
+    background-image: url('../images/trainer4.png');
+}
+
+.team-card-5 {
+    background-image: url('../images/trainer5.png');
+}
+
+.team-card-6 {
+    background-image: url('../images/trainer6.png');
+}
+
+.team-name {}
+
+.team-title {}
+
+
+
 
 
 
@@ -171,10 +253,18 @@ main>section {
 /* for small device */
 @media screen and (max-width: 576px) {
 
-    *{
+    /* shared styles */
+    body {
         padding: 0 1.25rem;
     }
 
+    .btn-primary {
+
+        padding: 1rem 1.5rem;
+        font-weight: 500;
+    }
+
+    /* nav styles */
     .nav-links {
         display: none;
     }
@@ -183,32 +273,30 @@ main>section {
         display: block;
     }
 
-    .banner {
-        flex-direction: column;
+    /* banner styles */
+    .banner,
+    .run-extra {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 0.5rem;
     }
 
-    .habit-card-container {
+    .banner-image {
+        margin: 0;
+        width: 100%;
+    }
+
+    .run-extra h3,
+    p {
+        padding: 0;
+    }
+
+    /* team-section-styles */
+    .team-card-container {
         grid-template-columns: 1fr;
     }
 
-    .facts-container {
-        justify-items: center;
-        gap: 24px;
-    }
 
-    .sponsor-companies {
-        justify-items: center;
-        gap: 50px;
-    }
-
-    .our-features {
-        margin-left: 20px;
-    }
-
-    #experience-badge {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
 }
 
 /* for medium size device */
