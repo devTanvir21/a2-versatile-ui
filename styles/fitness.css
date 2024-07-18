@@ -43,6 +43,7 @@ body {
     max-width: 1060px;
     margin: 0 auto;
     background-color: #343434;
+    color: #fff;
 }
 
 main>section {
@@ -52,6 +53,13 @@ main>section {
 .section-title {
     font-size: 3rem;
     font-weight: 900;
+    margin: 0;
+}
+
+.section-description {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0.8rem 0 3rem;
 }
 
 
@@ -69,7 +77,7 @@ main>section {
     font-weight: 800;
 }
 
-.nav-links{
+.nav-links {
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0.5rem 0;
     border-radius: 2.8rem;
@@ -87,19 +95,13 @@ main>section {
     padding: 0.5rem 1.25rem;
 }
 
-#btn-home{
+#btn-home {
     background-color: #E6533C;
     border-radius: 2.8rem;
 }
 
-.nav,
-.banner {
-    max-width: 1060px;
-    margin: 0 auto;
-    color: #fff;
-}
 
-/* banner related styles */
+/* banner styles */
 .banner-content {
     max-width: 520px;
     margin: 0 auto;
@@ -113,12 +115,12 @@ main>section {
     margin-bottom: 0;
 }
 
-.banner-description{
+.banner-description {
     color: rgba(255, 255, 255, 0.5);
     margin: 1.8rem 0 1.5rem;
 }
 
-#btn-download{
+#btn-download {
     background-color: #000;
     border: 1px solid #fff;
     margin-left: 0.6rem;
@@ -127,4 +129,10 @@ main>section {
 .banner-image {
     max-height: 580px;
     margin-left: 10rem;
+}
+
+
+/* change habit section */
+.change-habit{
+    text-align: center;
 }
