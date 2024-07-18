@@ -42,7 +42,7 @@
 body {
     max-width: 1060px;
     margin: 0 auto;
-    background-color: #343434;
+    background-color: #000;
     color: #fff;
 }
 
@@ -59,7 +59,6 @@ main>section {
 .section-description {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.5);
-    margin: 0.8rem 0 3rem;
 }
 
 
@@ -133,6 +132,89 @@ main>section {
 
 
 /* change habit section */
-.change-habit{
+.change-habit {
     text-align: center;
+}
+
+.habit-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.5rem;
+}
+
+.habit-card-img {
+    border-radius: 6rem;
+}
+
+.habit-card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.8rem 0 0.4rem;
+}
+
+.habit-card-description {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+/* responsive styles media query */
+/* for small device */
+@media screen and (max-width: 576px) {
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .habit-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-container {
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .sponsor-companies {
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .our-features {
+        margin-left: 20px;
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* for medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .teams,
+    .features {
+        flex-direction: column;
+    }
+
+    .our-features {
+        margin: 50px auto;
+    }
+
+    .habit-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+
+    #experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
