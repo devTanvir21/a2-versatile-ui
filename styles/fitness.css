@@ -17,13 +17,6 @@
     color: #E6533C;
 }
 
-
-.text-gray {
-    color: #424242;
-}
-
-
-
 .btn-primary {
     background-color: #E6533C;
     color: white;
@@ -34,10 +27,16 @@
 }
 
 body {
-    max-width: 1060px;
     margin: 0 auto;
     background-color: #000;
     color: #fff;
+}
+
+header,
+main,
+.footer-main {
+    max-width: 1060px;
+    margin: 0 auto;
 }
 
 main>section {
@@ -184,6 +183,7 @@ main>section {
 .team-card-container {
     border-radius: 1.1rem;
     margin-bottom: 3.6rem;
+    margin-top: 3.6rem;
     padding: 1.25rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -237,14 +237,69 @@ main>section {
     background-image: url('../images/trainer6.png');
 }
 
-.team-name {}
-
-.team-title {}
 
 
+/* footer styles */
+footer {
+    background-color: #222222;
+    margin-top: 5.5rem;
+    padding: 4rem 0 2.2rem;
+}
 
+.footer-container {
+    gap: 7rem;
+}
 
+.footer-title {
+    font-size: 6.4rem;
+    font-weight: 800;
+    margin: 0 0 1.25rem;
+}
 
+.footer-description {}
+
+.footer-logo-content {
+    max-width: 27rem;
+}
+
+.footer-contents {
+    gap: 9rem;
+}
+
+.footer-content h3 {
+    font-size: 2rem;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+    list-style: none;
+    margin-bottom: 1.25rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-end {
+    text-align: center;
+}
+
+.footer-hr {
+    margin-top: 5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copy-right {
+    margin: 2.25rem 0;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+}
 
 
 
@@ -292,6 +347,7 @@ main>section {
     }
 
     /* team-section-styles */
+    .habit-card-container,
     .team-card-container {
         grid-template-columns: 1fr;
     }
