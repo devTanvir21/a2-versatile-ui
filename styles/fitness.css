@@ -268,6 +268,7 @@ footer {
 
 .footer-content h3 {
     font-size: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .footer-links {
@@ -309,7 +310,8 @@ footer {
 @media screen and (max-width: 576px) {
 
     /* shared styles */
-    body {
+    header,
+    main {
         padding: 0 1.25rem;
     }
 
@@ -352,6 +354,25 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    /* footer styles */
+    footer {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .footer-container,
+    .footer-contents {
+        gap: 1.25rem;
+    }
+
+    .footer-container,
+    .footer-contents {
+        flex-direction: column;
+    }
+
+    .footer-title {
+        font-size: 4rem;
+    }
+
 
 }
 
@@ -376,5 +397,16 @@ footer {
     #experience-badge {
         margin-top: 20px;
         margin-left: 20px;
+    }
+
+    /* footer styles */
+    footer {
+        padding: 2.5rem 1.85rem;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-contents {
+        gap: 10rem;
     }
 }
