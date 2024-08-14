@@ -120,7 +120,7 @@ header {
     width: 100%;
 }
 
-.banner-btn-container{
+.banner-btn-container {
     gap: 0.7rem;
     flex-wrap: wrap;
 }
@@ -431,6 +431,42 @@ select {
 }
 
 
+/* contact us section styles */
+.contact-us {
+    background-image: url('../images/gym-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+}
+
+.contact-us-section-heading h3 {
+    padding-top: 4.5rem;
+}
+
+.contact-us-section-heading p {
+    padding-bottom: 3.5rem;
+    color: rgba(8, 0, 0, 0.6);
+    font-weight: 700;
+}
+
+.contact {
+    max-width: 60%;
+    padding-bottom: 1rem;
+    background: rgba(2, 27, 73, 0.4);
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.contact-form{
+    text-align: left;
+    padding: 3rem;
+    
+}
 
 /* footer styles */
 footer {
@@ -536,7 +572,7 @@ footer {
         padding-left: 0;
     }
 
-    .btn-workout{
+    .btn-workout {
         left: 10.5rem;
         padding: 0.85rem 1rem;
     }
@@ -545,7 +581,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    .btn-tutorial{
+    .btn-tutorial {
         left: -1.5rem;
     }
 
@@ -589,6 +625,14 @@ footer {
 
     .select-activity {
         margin: 0.7rem 0 0.7rem;
+    }
+
+    /* contact section styles */
+    .contact-us-section-heading p {
+        padding-bottom: 1.5rem;
+    }
+    .contact-form{
+        padding: 0.5rem;        
     }
 
     /* team-section-styles */
@@ -694,7 +738,7 @@ footer {
     }
 
     /* team section styles */
-    
+
 
     /* footer styles */
     footer {
