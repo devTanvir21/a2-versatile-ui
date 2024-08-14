@@ -10,33 +10,37 @@
 </head>
 
 <body>
-    <header class="max-width">
-        <nav class="nav display-flex">
-            <h3 class="nav-title color-primary"><em>Fitness</em></h3>
-            <ul class="nav-links display-flex">
-                <li class="nav-item"><a href="" class="nav-link" id="btn-home">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Service</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="" class="nav-link">About</a></li>
-            </ul>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+    <header class="common-padding">
+        <div class="max-width nav-banner-container">
+            <nav class="nav display-flex">
+                <h3 class="nav-title color-primary"><em>Fitness</em></h3>
+                <ul class="nav-links display-flex">
+                    <li class="nav-item"><a href="" class="nav-link" id="btn-home">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Service</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <div class="banner display-flex">
+                <div class="banner-content">
+                    <h1 class="banner-title">Get body in <br> <span class="miama-font">shape</span> & stay <br>healthy
+                    </h1>
+                    <p class="banner-description">Explore an extensive array of health and fitness resources, featuring
+                        nutritious recipes, motivational success stories, and expert tips to support your fitness
+                        journey!
+                    </p>
+                    <button class="btn-primary">Join Club Now!</button>
+                    <button class="btn-primary" id="btn-download">Download App</button>
+                </div>
+                <img class="banner-image" src="images/Images 2.png" alt="">
             </div>
-        </nav>
-        <div class="banner display-flex">
-            <div class="banner-content">
-                <h1 class="banner-title">Get body in <br> <span class="miama-font">shape</span> & stay <br>healthy</h1>
-                <p class="banner-description">Explore an extensive array of health and fitness resources, featuring
-                    nutritious recipes, motivational success stories, and expert tips to support your fitness journey!
-                </p>
-                <button class="btn-primary">Join Club Now!</button>
-                <button class="btn-primary" id="btn-download">Download App</button>
-            </div>
-            <img class="banner-image" src="images/Images 2.png" alt="">
         </div>
     </header>
     <main>
-        <section class="change-habit max-width">
+        <section class="change-habit max-width common-padding">
             <h3 class="section-title">Change Your Habits</h3>
             <p class="section-description">We are committed to making fitness inclusive and available to all, regardless
                 of financial means or access to traditional gym facilities. We believe fitness should be accessible to
@@ -68,16 +72,19 @@
                 </div>
             </div>
         </section>
-        <section class="run-extra max-width display-flex">
-            <div class="run-extra-content">
-                <h3 class="section-title">Run an Extra <br> Mile Easily</h3>
-                <p class="section-description">We are committed to ensuring that fitness is accessible to everyone,
-                    regardless of income or access to a gym. Through our extensive library of professional workouts, we
-                    aim to empower individuals everywhere to achieve their health and fitness goals conveniently and
-                    affordably.</p>
-                <button class="btn-primary">Join Now</button>
+        <section class="max-width section-run-extra">
+            <div class="run-extra display-flex">
+                <div class="run-extra-content">
+                    <h3 class="section-title">Run an Extra <br> Mile Easily</h3>
+                    <p class="section-description">We are committed to ensuring that fitness is accessible to everyone,
+                        regardless of income or access to a gym. Through our extensive library of professional workouts,
+                        we
+                        aim to empower individuals everywhere to achieve their health and fitness goals conveniently and
+                        affordably.</p>
+                    <button class="btn-primary">Join Now</button>
+                </div>
+                <img src="images/run.png" alt="">
             </div>
-            <img src="images/run.png" alt="">
         </section>
         <section class="bmi">
             <div class="max-width">
@@ -94,8 +101,8 @@
                         <h3>BMI Calculator Chart</h3>
                         <table>
                             <tr>
-                                <td>BMI</td>
-                                <td>Weight Status</td>
+                                <td class="table-heading">BMI</td>
+                                <td class="table-heading">Weight Status</td>
                             </tr>
                             <tr>
                                 <td>Below 18.5</td>
@@ -117,20 +124,27 @@
                     </div>
                     <div class="bmi-form">
                         <h3>Calculate your BMI</h3>
-                        <p>Assessing body fat through BMI is necessary for identifying health risks, guiding weight management, and informing healthcare decisions.</p>
+                        <p>Assessing body fat through BMI is necessary for identifying health risks, guiding weight
+                            management, and informing healthcare decisions.</p>
                         <form>
-                            <input type="text" placeholder="Height/cm">
-                            <input type="text" placeholder="Weight/kg">
-                            <input type="text" placeholder="Age">
-                            <input type="text" placeholder="Sex">
-                            <input type="text" placeholder="Select an activity factor">
+                            <div class="input-container">
+                                <input type="text" placeholder="Height/cm">
+                                <input type="text" placeholder="Weight/kg">
+                                <input type="text" placeholder="Age">
+                                <select name="" id="">
+                                    <option class="" value="">Sex</option>
+                                </select>
+                            </div>
+                            <select class="select-activity" name="" id="">
+                                <option value="">Select an activity factor</option>
+                            </select>
                         </form>
                         <button class="btn-primary">Calculate</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="team max-width">
+        <section class="team max-width common-padding">
             <h3 class="section-title">Meet Our team</h3>
             <p class="section-description">We advocate for universal access to fitness, transcending barriers of income
                 or gym accessibility, ensuring that everyone, everywhere, can embrace a healthy lifestyle.</p>
