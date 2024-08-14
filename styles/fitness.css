@@ -61,9 +61,10 @@ main>section {
 
 
 /* header */
-header{
-    background: linear-gradient(to top, #000, #111112);
+header {
+    background: linear-gradient(to top, #000, #262729);
 }
+
 /* navbar styles */
 .nav {
     justify-content: space-between;
@@ -105,11 +106,23 @@ header{
 
 
 /* banner styles */
+.banner {
+    justify-content: center;
+    align-items: center;
+
+}
+
 .banner-content {
-    max-width: 520px;
     margin: 0 auto;
     text-align: left;
     margin-bottom: 50px;
+    max-width: 520px;
+    width: 100%;
+}
+
+.banner-btn-container{
+    gap: 0.7rem;
+    flex-wrap: wrap;
 }
 
 .banner-title {
@@ -136,8 +149,69 @@ header{
 }
 
 .banner-image {
-    max-height: 580px;
-    margin-left: 10rem;
+    max-width: 600px;
+    max-height: 520px;
+    padding-right: 5rem;
+    padding-left: 10rem;
+}
+
+.img-btn-container {
+    position: relative;
+}
+
+.btn-workout {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 1.2rem;
+    text-align: left;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 22.5rem;
+}
+
+.workout-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.btn-tutorial {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.75rem;
+    position: absolute;
+    bottom: 4.5rem;
+    left: 3.5rem;
+}
+
+.tutorial-number {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.play-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    background: #E6533C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 0.5rem;
+    font-size: 1rem;
 }
 
 
@@ -170,9 +244,10 @@ header{
 
 
 /* run extra section styles */
-.section-run-extra{
+.section-run-extra {
     padding: 1rem;
 }
+
 .run-extra {
     gap: 10rem;
     padding: 1.8rem;
@@ -284,7 +359,7 @@ select {
     box-sizing: border-box;
 }
 
-select{
+select {
     border-right: 0.75rem solid transparent;
 }
 
@@ -311,7 +386,7 @@ select{
 
 .team-card {
     text-align: left;
-    max-width: 21rem;
+    max-width: 32rem;
     padding: 13rem 1rem 1rem;
     border-radius: 1.1rem;
     background-repeat: no-repeat;
@@ -450,14 +525,31 @@ footer {
     /* banner styles */
     .banner {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         padding: 0.5rem;
     }
 
     .banner-image {
         margin: 0;
         width: 100%;
+        padding-right: 0;
+        padding-left: 0;
     }
+
+    .btn-workout{
+        left: 10.5rem;
+        padding: 0.85rem 1rem;
+    }
+
+    .workout-number {
+        font-size: 1.5rem;
+    }
+
+    .btn-tutorial{
+        left: -1.5rem;
+    }
+
+
 
     /* run-extra section styles */
     .run-extra {
@@ -548,6 +640,11 @@ footer {
         padding: 0.5rem;
     }
 
+    .btn-workout {
+        left: 20.5rem;
+    }
+
+    /* team section styles */
     .teams,
     .features {
         flex-direction: column;
@@ -557,6 +654,7 @@ footer {
         margin: 50px auto;
     }
 
+    /* change habit section styles */
     .habit-card-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
@@ -594,6 +692,9 @@ footer {
         width: 80%;
         margin-top: 2rem;
     }
+
+    /* team section styles */
+    
 
     /* footer styles */
     footer {
